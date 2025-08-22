@@ -16,8 +16,8 @@ public class ProdutoTeste {
         System.out.println(p1.nome);
         System.out.println(p2.desconto);
 
-        double precoFinal1 = p1.precoComDesconto();
-        double precoFinal2 = p2.precoComDesconto();
+        double precoFinal1 = p1.precoComDesconto(2);
+        double precoFinal2 = p2.precoComDesconto(3);
 
         System.out.printf("Valor do %s com desconto: R$%.2f \n", p1.nome, precoFinal1);
         System.out.printf("Valor do %s com desconto: R$%.2f", p2.nome, precoFinal2);
