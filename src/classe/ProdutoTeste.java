@@ -3,8 +3,7 @@ package classe;
 public class ProdutoTeste {
 
     public static void main(String[] args) {
-        Produto p1 = new Produto();
-        p1.nome = "Notebook";
+        Produto p1 = new Produto("Notebook");
         p1.preco = 4568.89;
         p1.desconto = 0.25;
 
@@ -16,8 +15,8 @@ public class ProdutoTeste {
         System.out.println(p1.nome);
         System.out.println(p2.desconto);
 
-        double precoFinal1 = p1.precoComDesconto(2);
-        double precoFinal2 = p2.precoComDesconto(3);
+        double precoFinal1 = p1.precoComDesconto(0.1);
+        double precoFinal2 = p2.precoComDesconto(0.3);
 
         System.out.printf("Valor do %s com desconto: R$%.2f \n", p1.nome, precoFinal1);
         System.out.printf("Valor do %s com desconto: R$%.2f", p2.nome, precoFinal2);

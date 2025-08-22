@@ -3,11 +3,7 @@ package classe;
 public class DataTeste {
 
     public static void main(String[] args) {
-        Data nascimento = new Data();
-        nascimento.dia = 25;
-        nascimento.mes = 10;
-        nascimento.ano = 2004;
-
+        Data nascimento = new Data(25,10,2004);
 
         Data namoro = new Data();
         namoro.dia = 18;
