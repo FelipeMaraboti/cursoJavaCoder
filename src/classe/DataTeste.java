@@ -8,14 +8,14 @@ public class DataTeste {
         nascimento.mes = 10;
         nascimento.ano = 2004;
 
-        System.out.printf("Você nasceu no dia %d/%d/%d. \n", nascimento.dia, nascimento.mes, nascimento.ano);
 
         Data namoro = new Data();
         namoro.dia = 18;
-        namoro.mes = 02;
+        namoro.mes = 2;
         namoro.ano = 2024;
 
-        System.out.printf("Você começou a namorar no dia %d/%d/%d. \n",  namoro.dia, namoro.mes, namoro.ano);
+        System.out.println("Você nasceu no dia " + nascimento.obterDataFormatada());
+        System.out.println("Você começou a namorar no dia " + namoro.obterDataFormatada());
     }
 
 }
